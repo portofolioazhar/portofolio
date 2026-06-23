@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Profesional</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Font Awesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-[#0f172a] text-slate-200 font-sans">
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 left-0 w-full bg-[#0f172a]/80 backdrop-blur-md z-50 border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-wider text-cyan-400">PORTFOLIO.</a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#tentang" class="hover:text-cyan-400 transition-colors">Tentang</a>
+                <a href="#pengalaman" class="hover:text-cyan-400 transition-colors">Pengalaman</a>
+                <a href="#keahlian" class="hover:text-cyan-400 transition-colors">Keahlian</a>
+                <a href="#proyek" class="hover:text-cyan-400 transition-colors">Proyek</a>
+            </div>
+            <a href="mailto:emailanda@gmail.com" class="bg-cyan-500 hover:bg-cyan-600 text-slate-950 font-semibold px-4 py-2 rounded-lg text-sm transition-all shadow-lg shadow-cyan-500/20">Kontak Saya</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="min-h-screen flex items-center justify-center pt-16 px-4">
+        <div class="max-w-4xl text-center">
+            <p class="text-cyan-400 font-mono tracking-widest text-sm uppercase mb-3">Halo, Nama Saya</p>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight mb-4">Mumayyizun Azhar</h1>
+            <h2 class="text-xl md:text-3xl text-slate-400 font-medium mb-6">Informatics Student & Digital Content Creator</h2>
+            <p class="text-slate-400 max-w-xl mx-auto mb-8 leading-relaxed">
+                Fokus pada pengembangan sistem, analisis data, dan keamanan siber, dipadukan dengan pengalaman praktis di industri operasional digital dan pembuatan konten kreatif.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="#proyek" class="bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 px-6 py-3 rounded-lg font-medium transition-all">Lihat Proyek</a>
+                <a href="#pengalaman" class="bg-cyan-500 hover:bg-cyan-600 text-slate-950 px-6 py-3 rounded-lg font-medium transition-all shadow-lg shadow-cyan-500/20">Riwayat Kerja</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TENTANG SAYA -->
+    <section id="tentang" class="py-24 px-4 max-w-4xl mx-auto border-t border-slate-800/60">
+        <div class="grid md:grid-cols-3 gap-8 items-center">
+            <div class="md:col-span-1 flex justify-center">
+                <div class="w-48 h-48 rounded-2xl bg-gradient-to-tr from-cyan-500 to-blue-600 p-1 shadow-xl">
+                    <div class="w-full h-full bg-[#1e293b] rounded-2xl flex items-center justify-center">
+                        <i class="fa-solid fa-user-astronaut text-5xl text-cyan-400"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="md:col-span-2">
+                <h3 class="text-2xl font-bold text-white mb-4">Tentang Saya</h3>
+                <p class="text-slate-400 leading-relaxed mb-4">
+                    Saat ini saya adalah mahasiswa aktif S1 Informatika di Universitas Islam Lamongan. Saya memiliki ketertarikan yang besar pada bagaimana teknologi informasi dapat mengoptimalkan efisiensi bisnis, mulai dari pengelolaan data penjualan hingga pengamanan infrastruktur digital.
+                </p>
+                <p class="text-slate-400 leading-relaxed">
+                    Selain di ranah akademis, saya aktif membangun ekosistem digital mandiri, mengelola operasional toko online, serta melakukan eksperimen teknis pada aplikasi berbasis desktop dan web.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PENGALAMAN -->
+    <section id="pengalaman" class="py-24 px-4 bg-[#0b1329]">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-2xl font-bold text-white text-center mb-12">Pengalaman Kerja & Organisasi</h3>
+            
+            <div class="space-y-8 border-l-2 border-slate-700 pl-6 ml-4">
+                <!-- Kerja 1 -->
+                <div class="relative">
+                    <div class="absolute -left-[33px] top-1.5 w-4 h-4 rounded-full bg-cyan-400 border-4 border-[#0b1329]"></div>
+                    <span class="text-xs font-mono text-cyan-400">2022 - Sekarang</span>
+                    <h4 class="text-lg font-bold text-white">Support Operasional & Penjualan Online <span class="text-slate-400 font-normal">| Freelance</span></h4>
+                    <p class="text-sm text-slate-400 mt-1">Mengonfigurasi aplikasi sistem penjualan (POS), mengelola database inventaris produk (100+ SKU), dan menganalisis data penjualan harian untuk optimalisasi profit bisnis.</p>
+                </div>
+                <!-- Kerja 2 -->
+                <div class="relative">
+                    <div class="absolute -left-[33px] top-1.5 w-4 h-4 rounded-full bg-slate-600 border-4 border-[#0b1329]"></div>
+                    <span class="text-xs font-mono text-slate-400">2023 - Sekarang</span>
+                    <h4 class="text-lg font-bold text-white">Live Streamer & Content Creator <span class="text-slate-400 font-normal">| PlayLabs</span></h4>
+                    <p class="text-sm text-slate-400 mt-1">Membangun interaksi digital dengan audiens melalui *live selling* dan *streaming platform*, serta merancang strategi konten visual yang responsif terhadap tren pasar.</p>
+                </div>
+                <!-- Organisasi -->
+                <div class="relative">
+                    <div class="absolute -left-[33px] top-1.5 w-4 h-4 rounded-full bg-slate-600 border-4 border-[#0b1329]"></div>
+                    <span class="text-xs font-mono text-slate-400">2018 - 2020</span>
+                    <h4 class="text-lg font-bold text-white">Ketua Bidang PIP <span class="text-slate-400 font-normal">| IPM Ranting</span></h4>
+                    <p class="text-sm text-slate-400 mt-1">Memimpin koordinasi tim dalam merancang program kerja edukasi, mengelola administrasi organisasi, dan mengeksekusi kegiatan kepanitiaan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KEAHLIAN -->
+    <section id="keahlian" class="py-24 px-4 max-w-4xl mx-auto">
+        <h3 class="text-2xl font-bold text-white text-center mb-12">Keahlian & Kompetensi</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-[#1e293b] p-4 rounded-xl border border-slate-800 text-center">
+                <i class="fa-solid fa-code text-2xl text-cyan-400 mb-2"></i>
+                <h4 class="font-semibold text-white">Programming</h4>
+                <p class="text-xs text-slate-400 mt-1">Python, HTML, CSS</p>
+            </div>
+            <div class="bg-[#1e293b] p-4 rounded-xl border border-slate-800 text-center">
+                <i class="fa-solid fa-chart-pie text-2xl text-cyan-400 mb-2"></i>
+                <h4 class="font-semibold text-white">Data Analysis</h4>
+                <p class="text-xs text-slate-400 mt-1">Excel, Entry, POS System</p>
+            </div>
+            <div class="bg-[#1e293b] p-4 rounded-xl border border-slate-800 text-center">
+                <i class="fa-solid fa-shield-halved text-2xl text-cyan-400 mb-2"></i>
+                <h4 class="font-semibold text-white">Cybersecurity</h4>
+                <p class="text-xs text-slate-400 mt-1">Network & Coding Security</p>
+            </div>
+            <div class="bg-[#1e293b] p-4 rounded-xl border border-slate-800 text-center">
+                <i class="fa-solid fa-palette text-2xl text-cyan-400 mb-2"></i>
+                <h4 class="font-semibold text-white">Digital Design</h4>
+                <p class="text-xs text-slate-400 mt-1">Editing & Content Creation</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYEK -->
+    <section id="proyek" class="py-24 px-4 bg-[#0b1329]">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-2xl font-bold text-white text-center mb-12">Proyek Pilihan</h3>
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Proyek 1 -->
+                <div class="bg-[#1e293b] rounded-xl overflow-hidden border border-slate-800 flex flex-col justify-between p-6">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <i class="fa-regular fa-folder-open text-3xl text-cyan-400"></i>
+                            <div class="space-x-2 text-slate-400">
+                                <a href="#" class="hover:text-white"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">Aplikasi POS Kasir & Audit Keuangan</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed mb-4">
+                            Sistem aplikasi desktop kasir *single-user* dan pencatatan log audit finansial yang dibangun menggunakan Python, Tkinter, dan SQLite.
+                        </p>
+                    </div>
+                    <div class="flex space-x-2 text-xs font-mono text-cyan-400">
+                        <span>Python</span><span>Tkinter</span><span>SQLite</span>
+                    </div>
+                </div>
+                <!-- Proyek 2 -->
+                <div class="bg-[#1e293b] rounded-xl overflow-hidden border border-slate-800 flex flex-col justify-between p-6">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <i class="fa-regular fa-folder-open text-3xl text-cyan-400"></i>
+                            <div class="space-x-2 text-slate-400">
+                                <a href="#" class="hover:text-white"><i class="fa-solid fa-globe"></i></a>
+                            </div>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">Web Platform & Optimization Lifecycle</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed mb-4">
+                            Pengembangan dan optimalisasi SEO arsitektur web majalah berita/teknologi digital kustom dengan integrasi API monetisasi iklan.
+                        </p>
+                    </div>
+                    <div class="flex space-x-2 text-xs font-mono text-cyan-400">
+                        <span>HTML/XML</span><span>SEO</span><span>DNS Routing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 text-center text-xs text-slate-500 border-t border-slate-800/60">
+        <p>&copy; 2026 Mumayyizun Azhar. Dibuat dengan HTML & Tailwind CSS.</p>
+    </footer>
+
+</body>
+</html>
