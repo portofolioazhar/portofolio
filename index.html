@@ -22,7 +22,7 @@
                     <a href="#profil" class="hover:text-blue-600 transition">Profil</a>
                     <a href="#pengalaman" class="hover:text-blue-600 transition">Pengalaman</a>
                     <a href="#keahlian" class="hover:text-blue-600 transition">Keahlian</a>
-                    <a href="#pendidikan" class="hover:text-blue-600 transition">Pendidikan</a>
+                    <a href="#sertifikasi" class="hover:text-blue-600 transition">Sertifikasi</a>
                 </div>
                 <a href="mailto:ytmumayyizun@gmail.com" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg text-sm font-medium transition shadow-md shadow-blue-500/20">
                     Hubungi Saya
@@ -37,11 +37,11 @@
             
             <!-- Tombol Interaktif Pengubah Profil -->
             <div class="inline-flex bg-white p-1.5 rounded-full border border-slate-200 shadow-sm mb-4">
-                <button onclick="switchRole('admin')" id="btn-admin" class="role-btn px-6 py-2 rounded-full text-sm font-bold transition-all bg-blue-600 text-white shadow-md">
+                <button onclick="switchRole('admin')" id="btn-admin" class="role-btn px-6 py-2 rounded-full text-sm font-bold transition-all bg-blue-600 text-white shadow-md cursor-pointer">
                     <i class="fa-solid fa-headset mr-2"></i>Admin & Cust. Service
                 </button>
-                <button onclick="switchRole('it')" id="btn-it" class="role-btn px-6 py-2 rounded-full text-sm font-medium transition-all text-slate-500 hover:text-slate-800">
-                    <i class="fa-solid fa-code mr-2"></i>IT & Programming
+                <button onclick="switchRole('it')" id="btn-it" class="role-btn px-6 py-2 rounded-full text-sm font-medium transition-all text-slate-500 hover:text-slate-800 cursor-pointer">
+                    <i class="fa-solid fa-code mr-2"></i>IT & Data Analyst
                 </button>
             </div>
 
@@ -64,6 +64,7 @@
         <section id="keahlian" class="max-w-5xl mx-auto px-4 sm:px-6 mt-32">
             <h2 class="text-2xl font-bold text-slate-900 text-center mb-10">Kompetensi Inti</h2>
             
+            <!-- SKILL ADMIN/CS -->
             <div id="skills-admin" class="grid grid-cols-2 md:grid-cols-4 gap-6 skill-section block">
                 <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm text-center hover:-translate-y-1 transition">
                     <div class="w-12 h-12 mx-auto bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-4"><i class="fa-solid fa-users text-xl"></i></div>
@@ -87,16 +88,17 @@
                 </div>
             </div>
 
+            <!-- SKILL IT/DATA ANALYST -->
             <div id="skills-it" class="grid grid-cols-2 md:grid-cols-4 gap-6 skill-section hidden">
                 <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm text-center hover:-translate-y-1 transition">
                     <div class="w-12 h-12 mx-auto bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center mb-4"><i class="fa-brands fa-python text-xl"></i></div>
-                    <h3 class="font-bold text-slate-800">Pemrograman</h3>
-                    <p class="text-sm text-slate-500 mt-2">Python, Tkinter GUI, dan logika algoritma terstruktur.</p>
+                    <h3 class="font-bold text-slate-800">Pemrograman Python</h3>
+                    <p class="text-sm text-slate-500 mt-2">Automasi, Data Analytics, dan pembuatan GUI Tkinter.</p>
                 </div>
                 <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm text-center hover:-translate-y-1 transition">
                     <div class="w-12 h-12 mx-auto bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center mb-4"><i class="fa-solid fa-database text-xl"></i></div>
-                    <h3 class="font-bold text-slate-800">Manajemen Basis Data</h3>
-                    <p class="text-sm text-slate-500 mt-2">SQLite, integrasi data aplikasi, dan kueri dasar.</p>
+                    <h3 class="font-bold text-slate-800">Manajemen Data</h3>
+                    <p class="text-sm text-slate-500 mt-2">SQL Queries, Spreadsheets, OSEMN Framework, SQLite.</p>
                 </div>
                 <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm text-center hover:-translate-y-1 transition">
                     <div class="w-12 h-12 mx-auto bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center mb-4"><i class="fa-solid fa-shield-halved text-xl"></i></div>
@@ -104,14 +106,90 @@
                     <p class="text-sm text-slate-500 mt-2">Pemahaman jaringan dan identifikasi celah keamanan.</p>
                 </div>
                 <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm text-center hover:-translate-y-1 transition">
-                    <div class="w-12 h-12 mx-auto bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center mb-4"><i class="fa-solid fa-code text-xl"></i></div>
-                    <h3 class="font-bold text-slate-800">Web Development</h3>
-                    <p class="text-sm text-slate-500 mt-2">HTML, CSS, manajemen DNS dan routing website.</p>
+                    <div class="w-12 h-12 mx-auto bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center mb-4"><i class="fa-solid fa-globe text-xl"></i></div>
+                    <h3 class="font-bold text-slate-800">Web Architecture</h3>
+                    <p class="text-sm text-slate-500 mt-2">HTML, CSS, dan optimasi SEO serta pemetaan DNS.</p>
                 </div>
             </div>
         </section>
 
-        <!-- PENGALAMAN KERJA BERSAMA -->
+        <!-- SERTIFIKASI PROFESIONAL (SECTION BARU) -->
+        <section id="sertifikasi" class="max-w-5xl mx-auto px-4 sm:px-6 mt-32">
+            <h2 class="text-2xl font-bold text-slate-900 text-center mb-10 border-b border-slate-200 pb-4">Kredensial & Sertifikasi</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- KARTU 1: META DATA ANALYST (Unggulan) -->
+                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden hover:shadow-lg transition-all group flex flex-col relative">
+                    <!-- Pita Garis Atas -->
+                    <div class="h-2 w-full bg-gradient-to-r from-blue-500 to-indigo-600"></div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center border border-blue-100 text-blue-600">
+                                <i class="fa-brands fa-meta text-2xl"></i>
+                            </div>
+                            <span class="text-[10px] font-bold px-2.5 py-1 bg-green-100 text-green-700 rounded-full border border-green-200"><i class="fa-solid fa-check-circle mr-1"></i>Verified</span>
+                        </div>
+                        <h3 class="font-bold text-slate-800 text-lg leading-tight mb-1">Meta Data Analyst Professional Certificate</h3>
+                        <p class="text-sm text-slate-500 mb-4 font-medium">Coursera & Meta • 9 Mar 2026</p>
+                        
+                        <!-- Tags Keahlian -->
+                        <div class="flex flex-wrap gap-1.5 mb-6">
+                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-1 rounded border border-slate-200">Python</span>
+                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-1 rounded border border-slate-200">SQL</span>
+                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-1 rounded border border-slate-200">Spreadsheets</span>
+                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-1 rounded border border-slate-200">Data Mgmt.</span>
+                        </div>
+                        
+                        <!-- Link Verifikasi Asli -->
+                        <div class="mt-auto pt-4 border-t border-slate-100">
+                            <a href="https://coursera.org/verify/professional-cert/MMUT6YVW3HL1" target="_blank" class="text-sm text-blue-600 font-bold hover:text-blue-800 flex items-center transition-colors">
+                                Lihat Kredensial Asli <i class="fa-solid fa-arrow-up-right-from-square ml-1.5 text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KARTU 2: CYBER SECURITY -->
+                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden hover:shadow-lg transition-all group flex flex-col">
+                    <div class="h-2 w-full bg-slate-300 group-hover:bg-indigo-500 transition-colors"></div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-12 h-12 bg-slate-50 rounded-lg flex items-center justify-center border border-slate-100 text-slate-600 group-hover:text-indigo-600 group-hover:bg-indigo-50 transition-colors">
+                                <i class="fa-solid fa-shield-halved text-2xl"></i>
+                            </div>
+                        </div>
+                        <h3 class="font-bold text-slate-800 text-lg leading-tight mb-1">Cyber Security Coding Studio</h3>
+                        <p class="text-sm text-slate-500 mb-4">Lembaga Pelatihan Independen</p>
+                        
+                        <div class="flex flex-wrap gap-1.5 mb-6">
+                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-1 rounded border border-slate-200">Network Security</span>
+                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-1 rounded border border-slate-200">Vulnerability</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KARTU 3: DESIGN GRAFIS -->
+                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden hover:shadow-lg transition-all group flex flex-col">
+                    <div class="h-2 w-full bg-slate-300 group-hover:bg-blue-400 transition-colors"></div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-12 h-12 bg-slate-50 rounded-lg flex items-center justify-center border border-slate-100 text-slate-600 group-hover:text-blue-500 group-hover:bg-blue-50 transition-colors">
+                                <i class="fa-solid fa-palette text-2xl"></i>
+                            </div>
+                        </div>
+                        <h3 class="font-bold text-slate-800 text-lg leading-tight mb-1">Pelatihan Design Grafis</h3>
+                        <p class="text-sm text-slate-500 mb-4">Sertifikasi Praktis • 2025</p>
+                        
+                        <div class="flex flex-wrap gap-1.5 mb-6">
+                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-1 rounded border border-slate-200">Visual Creation</span>
+                            <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-1 rounded border border-slate-200">Digital Editing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PENGALAMAN KERJA & ORGANISASI -->
         <section id="pengalaman" class="max-w-4xl mx-auto px-4 sm:px-6 mt-32">
             <h2 class="text-2xl font-bold text-slate-900 mb-10 border-b border-slate-200 pb-4">Riwayat Pekerjaan & Organisasi</h2>
             
@@ -147,7 +225,7 @@
                     </div>
                 </div>
 
-                <!-- Pengalaman 3 (Organisasi / Leadership) -->
+                <!-- Pengalaman 3 (Organisasi) -->
                 <div class="relative pl-8 md:pl-0">
                     <div class="md:grid md:grid-cols-4 md:gap-6">
                         <div class="md:col-span-1 mb-2 md:mb-0 text-sm font-bold text-blue-600 md:text-right mt-1">2018 - 2020</div>
@@ -164,29 +242,24 @@
             </div>
         </section>
 
-        <!-- PENDIDIKAN & SERTIFIKASI -->
-        <section id="pendidikan" class="max-w-4xl mx-auto px-4 sm:px-6 mt-24 bg-white rounded-2xl p-8 border border-slate-200 shadow-sm">
-            <h2 class="text-2xl font-bold text-slate-900 mb-6">Pendidikan & Sertifikasi</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div>
-                    <h3 class="font-bold text-slate-800 text-lg mb-4"><i class="fa-solid fa-graduation-cap text-blue-600 mr-2"></i>Akademis</h3>
-                    <div class="space-y-4">
-                        <div>
-                            <p class="font-semibold text-slate-900">S1 Informatika</p>
-                            <p class="text-sm text-slate-600">Universitas Islam Lamongan (2023 - Sekarang)</p>
-                        </div>
-                        <div>
-                            <p class="font-semibold text-slate-900">Jurusan IPS</p>
-                            <p class="text-sm text-slate-600">SMA Al-Amin Paciran (2020 - 2023)</p>
-                        </div>
+        <!-- PENDIDIKAN -->
+        <section id="pendidikan" class="max-w-4xl mx-auto px-4 sm:px-6 mt-24">
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 text-center">Riwayat Akademis</h2>
+            <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm flex flex-col md:flex-row gap-8 justify-around text-center md:text-left">
+                <div class="flex items-center flex-col md:flex-row gap-4">
+                    <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center text-2xl"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div>
+                        <p class="font-bold text-slate-900 text-lg">S1 Informatika</p>
+                        <p class="text-sm text-slate-600">Universitas Islam Lamongan (2023 - Sekarang)</p>
                     </div>
                 </div>
-                <div>
-                    <h3 class="font-bold text-slate-800 text-lg mb-4"><i class="fa-solid fa-certificate text-blue-600 mr-2"></i>Sertifikasi Profesi</h3>
-                    <ul class="space-y-3 text-sm text-slate-600 list-disc list-inside marker:text-blue-600">
-                        <li><strong>Pelatihan Design Grafis</strong> (2025)</li>
-                        <li><strong>Cyber Security Coding Studio</strong></li>
-                    </ul>
+                <div class="hidden md:block w-px bg-slate-200 h-16"></div>
+                <div class="flex items-center flex-col md:flex-row gap-4">
+                    <div class="w-14 h-14 bg-slate-50 text-slate-400 rounded-full flex items-center justify-center text-xl"><i class="fa-solid fa-school"></i></div>
+                    <div>
+                        <p class="font-bold text-slate-900 text-lg">Jurusan IPS</p>
+                        <p class="text-sm text-slate-600">SMA Al-Amin Paciran (2020 - 2023)</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -200,7 +273,6 @@
     <!-- INTERACTIVE JAVASCRIPT: LOGIKA DUAL-TRACK -->
     <script>
         function switchRole(role) {
-            // Definisikan elemen
             const btnAdmin = document.getElementById('btn-admin');
             const btnIt = document.getElementById('btn-it');
             const heroHighlight = document.getElementById('hero-highlight');
@@ -210,30 +282,24 @@
             const skillsIt = document.getElementById('skills-it');
 
             if (role === 'admin') {
-                // Style Tombol
-                btnAdmin.className = "role-btn px-6 py-2 rounded-full text-sm font-bold transition-all bg-blue-600 text-white shadow-md";
-                btnIt.className = "role-btn px-6 py-2 rounded-full text-sm font-medium transition-all text-slate-500 hover:text-slate-800";
+                btnAdmin.className = "role-btn px-6 py-2 rounded-full text-sm font-bold transition-all bg-blue-600 text-white shadow-md cursor-pointer";
+                btnIt.className = "role-btn px-6 py-2 rounded-full text-sm font-medium transition-all text-slate-500 hover:text-slate-800 cursor-pointer";
                 
-                // Ubah Teks Hero
                 heroHighlight.innerText = "Pelayanan Pelanggan & Tata Kelola Data";
                 heroHighlight.className = "text-blue-600";
                 heroDesc.innerText = "Saya adalah komunikator yang andal dengan pengalaman kuat di bidang administrasi data, dukungan operasional ritel, dan layanan pelanggan (Customer Service). Berdedikasi untuk memberikan pengalaman pelanggan terbaik dan menjaga akurasi sistem operasional perusahaan.";
                 
-                // Tampilkan Skill Admin, Sembunyikan IT
                 skillsAdmin.classList.remove('hidden');
                 skillsIt.classList.add('hidden');
 
             } else if (role === 'it') {
-                // Style Tombol
-                btnIt.className = "role-btn px-6 py-2 rounded-full text-sm font-bold transition-all bg-indigo-600 text-white shadow-md";
-                btnAdmin.className = "role-btn px-6 py-2 rounded-full text-sm font-medium transition-all text-slate-500 hover:text-slate-800";
+                btnIt.className = "role-btn px-6 py-2 rounded-full text-sm font-bold transition-all bg-indigo-600 text-white shadow-md cursor-pointer";
+                btnAdmin.className = "role-btn px-6 py-2 rounded-full text-sm font-medium transition-all text-slate-500 hover:text-slate-800 cursor-pointer";
                 
-                // Ubah Teks Hero
-                heroHighlight.innerText = "Pengembangan Sistem & Arsitektur Logika";
+                heroHighlight.innerText = "Analisis Data & Pengembangan Sistem";
                 heroHighlight.className = "text-indigo-600";
-                heroDesc.innerText = "Mahasiswa Informatika yang merancang dan mengembangkan aplikasi desktop fungsional serta optimalisasi arsitektur web. Terbiasa memecahkan masalah komputasi kompleks dengan Python, manipulasi basis data SQLite, dan pengamanan struktur logika kode.";
+                heroDesc.innerText = "Mahasiswa Informatika tersertifikasi Meta Data Analyst yang merangkum data SQL kompleks menjadi wawasan bisnis. Berpengalaman dalam logika bahasa Python, manipulasi basis data, serta optimalisasi alur kerja digital.";
                 
-                // Tampilkan Skill IT, Sembunyikan Admin
                 skillsIt.classList.remove('hidden');
                 skillsAdmin.classList.add('hidden');
             }
